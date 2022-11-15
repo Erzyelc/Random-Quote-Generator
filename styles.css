@@ -6,29 +6,33 @@
 
 body{
     background-color: #f5ebe0;
-    font-family: 'Kanit', sans-serif;
 }
 
-.container{
+#container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #d5bdaf;
     border-radius: 35px;
     height: 600px;
     margin: 100px 100px;
 }
 
+.container{
+    background-color: #d5bdaf;
+}
+
 h1{
     font-size: 48px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     color: #edede9;
+    font-family: 'Kanit', sans-serif;
 }
 
 p{
     color: #1d3557;
     font-weight: 600;
+    font-family: 'Kanit', sans-serif;
 }
 
 button{
@@ -41,5 +45,101 @@ button{
     background-color: #1d3557;
     color: #edede9;
     cursor: pointer;
+    font-family: 'Kanit', sans-serif;
 }
 
+.displayBackground{
+    background-color: #d4a373;
+}
+
+#quote-results{
+    border-radius: 35px;
+    padding: 30px;
+    margin-top: 50px;
+    width: 50%;
+}
+
+#quote-results h3{
+    font-size: 20px;
+    font-family: 'Xanh Mono', monospace;
+    margin-bottom: 20px;
+    color: #edede9;
+}
+
+#quote-results h4{
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    color: #1d3557;
+}
+
+.quote-background{
+    background: none;
+    border: none;
+}
+
+.backgroundBlue{
+    background-color: #a2d2ff;
+}
+
+.backgroundRed{
+    background-color: #e63946;
+}
+
+.backgroundGreen{
+    background-color: #84a98c;
+}
+
+.icons-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.icons-flex-container{
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  
+.btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+.blue{
+    color: #a2d2ff;
+  }
+  
+.red{
+    color: #e63946;
+  }
+  
+.green{
+    color: #84a98c;
+}
+
+.gray{
+    color: #8d99ae;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #container{
+        height: 800px;
+    }
+    h1{
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    #quote-results{
+        width: 70%;
+        margin-top: 70px;
+    }
+}

@@ -29,7 +29,33 @@ function displayQuote(){
         console.log(data.data[0].quoteText);
         console.log(data.data[0].quoteAuthor);
 
-        results.innerHTML = `<h3>Quote: ${data.data[0].quoteText}</h3>`;
-        results.innerHTML += `<h4>Author: ${data.data[0].quoteAuthor}</h4>`;
+        results.innerHTML = `<h3>${data.data[0].quoteText}</h3>`;
+        results.innerHTML += `<h4>-${data.data[0].quoteAuthor}</h4>`;
     });
+}
+
+function displayBackground(){
+    const display = document.getElementById("quote-results");
+    display.classList.toggle("displayBackground");
+}
+
+function changeBackground(){
+    const background = document.getElementById("container");
+    background.classList.toggle("backgroundBlue");
+}
+
+function changeBackgroundRed(){
+    const background = document.getElementById("container");
+    background.classList.toggle("backgroundRed");
+}
+
+function changeBackgroundGreen(){
+    const background = document.getElementById("container");
+    background.classList.toggle("backgroundGreen");
+}
+
+function removeBackground(){
+    const cls = ["backgroundBlue", "backgroundRed", "backgroundGreen"];
+    const background = document.getElementById("container");
+    background.classList.remove(...cls);
 }

@@ -7,18 +7,49 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&family=Xanh+Mono:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,200" />
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
+    <div id="container"  class="container">
         <h1>Care For A Quote?</h1>
         <p>Click the button below to receive a random quote</p>
-        <button id="get-quote" onclick="displayQuote()">GET QUOTE</button>
+        <button id="get-quote">GET QUOTE</button>
         <div id="quote-results">
             
         </div>
+        <button class="quote-background" onclick="displayBackground()">
+            <span class="material-symbols-outlined">
+                check_circle
+            </span>
+        </button>
     </div>
+    <div class="icons-container">
+        <nav class="icons-flex-container">
+          <button class = "btn blue" onclick="changeBackground()">
+            <span class="material-symbols-outlined">
+              radio_button_unchecked
+            </span>
+          </button>
+           <button class = "btn red" onclick="changeBackgroundRed()">
+             <span class="material-symbols-outlined">
+              radio_button_unchecked
+            </span>
+           </button>
+           <button class = "btn green" onclick="changeBackgroundGreen()">
+             <span class="material-symbols-outlined">
+              radio_button_unchecked
+             </span>
+           </button>
+           <button class="btn gray" onclick="removeBackground()">
+            <span class="material-symbols-outlined">
+                cancel
+            </span>
+           </button>
+        </nav>
+      </div>
+
     <script src="script.js"></script>
 </body>
 </html>
