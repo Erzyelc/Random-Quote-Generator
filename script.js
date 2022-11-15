@@ -1,10 +1,11 @@
 //alert("Connected!");
 
-const testurl = "https://quote-garden.herokuapp.com/api/v3/quotes?page=3";
+/*const testurl = "https://quote-garden.herokuapp.com/api/v3/quotes?page=3";
 
 fetch(testurl)
 .then(response => response.json())
 .then(data => console.log(data));
+*/
 
 
 document.getElementById("get-quote").addEventListener("click", displayQuote);
@@ -16,7 +17,7 @@ function displayQuote(){
     const results = document.getElementById("quote-results");
 
     const randomNumber = Math.floor(Math.random() * 7000);
-    const randomQuoteNumber = Math.floor(Math.random() * 11);
+    //const randomQuoteNumber = Math.floor(Math.random() * 11);
     //console.log(randomNumber);
 
     const endpoint = `https://quote-garden.herokuapp.com/api/v3/quotes?page=${randomNumber}`;
